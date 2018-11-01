@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/selectable_white_background">
+
+    <ImageView
+        android:id="@+id/article_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:foreground="@drawable/black_gradient"
+        android:scaleType="centerCrop"
+        android:transitionName="article_background_transition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:transitionName="article_title_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="New docum" />
+
+    <TextView
+        android:id="@+id/article_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha=".87"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:transitionName="article_body_transition"
+        app:layout_constraintTop_toBottomOf="@id/article_title"
+        tools:text="New documents show federal agents in the state of Delaware aided in the takedown of a British hacker by seizing nearly $217,000 worth of Bitcoin from one of Gant West’s accounts. West allegedly sold personal information after hacking into websites." />
+
+    <TextView
+        android:id="@+id/article_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".87"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:transitionName="article_time_transition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_body"
+        tools:text="22/44/2017 10:43" />
+
+    <ImageView
+        android:id="@+id/article_source_image"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:transitionName="article_source_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_body"
+        tools:background="@color/white" />
+
+    <TextView
+        android:id="@+id/article_source_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".87"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:transitionName="article_source_name_transition"
+        app:layout_constraintBottom_toBottomOf="@id/article_source_image"
+        app:layout_constraintEnd_toStartOf="@id/article_source_image"
+        app:layout_constraintTop_toTopOf="@id/article_source_image"
+        tools:ignore="SmallSp"
+        tools:text="CNN" />
+
+</android.support.constraint.ConstraintLayout>

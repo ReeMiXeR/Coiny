@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_currency"
+        android:icon="@drawable/ic_bottom_menu_charts"
+        android:title="Charts"/>
+
+    <item
+        android:id="@+id/navigation_feed"
+        android:icon="@drawable/ic_bottom_menu_feed"
+        android:title="Feed"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_bottom_menu_settings"
+        android:title="Settings"/>
+</menu>
